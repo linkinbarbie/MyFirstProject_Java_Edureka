@@ -55,7 +55,7 @@ public class Edureka_For {
 //        int ii = (x * 10)+z;
 
         for(int q = 6558; q != 0; q = q / 10) {
-
+            //you have to declare the variables in scope if you are creating them within the scope.they cannot be called outside the scope.
             int yu = q % 10;
              w = w * 10 + yu;
         }
