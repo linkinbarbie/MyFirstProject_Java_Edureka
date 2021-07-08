@@ -9,7 +9,7 @@ public class Edureka_For {
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
-// factorial of 3 -
+// Write a program to find factorial of a number
         int i = 1;
         int n = 5;
         //get the value to multiply the factorials by
@@ -22,5 +22,16 @@ public class Edureka_For {
         int results = 0;
         for(int r = 1; r <= 3; r++)
             System.out.println("10 x " + r + ": " +r * 10);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//Write a program to add the digits of a number
+       int o = 65;
+        int b = o % 10;
+        int x = o / 10;
+        int m = b + x;
+
+        System.out.println(m);
+
+
     }
 }
