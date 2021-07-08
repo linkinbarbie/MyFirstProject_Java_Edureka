@@ -31,6 +31,7 @@ public class Edureka_Assignment_IfElse {
             boolEven = false;
         System.out.println("The given number is even: " + boolEven);
 
+
     }
 
 
