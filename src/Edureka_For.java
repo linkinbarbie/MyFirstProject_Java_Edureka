@@ -36,15 +36,30 @@ public class Edureka_For {
 //        int x = o / 10;
 //          int b = 0;
         int m = 0; //create a variable for iteratively sum each digit
-        int o = 6517782; //here is the test digit
+        int o = 651778231; //here is the test digit
+        int uu = o;
 //        int m = b + x;
 
         for (m = 0; o != 0; o = o / 10) //initialise m = 0 and if the test digit is greater than 0  then iteratively divide each digit by 10 until o = 0 is false
              m = m + o % 10;//get the remainder and adds it to the sum variable
-        System.out.println("print" + m);
+        System.out.println("Adding digits for "+ uu + " to get " + m);
 
  ///////////////////////////////////////////////////////////////////////////////////////////////////////////
  //Write a program to reverse the digits of a number.
+
+
+        int w = 0;//declare the test variable, the second variable for print line,
+        int ni = 6558;
+//        int x = q % 10;
+//        int z = q / 10;
+//        int ii = (x * 10)+z;
+
+        for(int q = 6558; q != 0; q = q / 10) {
+
+            int yu = q % 10;
+             w = w * 10 + yu;
+        }
+        System.out.println("Reverse to " + ni + " get " + w);
 
     }
 }
