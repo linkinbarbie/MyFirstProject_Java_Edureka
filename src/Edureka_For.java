@@ -17,5 +17,10 @@ public class Edureka_For {
             i=i * num; //multiply the base number by each number incrementally
                 System.out.println(i + " is the factorial of " + n);
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//Write a program to generate tables of 10
+        int results = 0;
+        for(int r = 1; r <= 3; r++)
+            System.out.println("10 x " + r + ": " +r * 10);
     }
 }
