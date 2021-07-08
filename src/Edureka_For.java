@@ -25,13 +25,26 @@ public class Edureka_For {
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //Write a program to add the digits of a number
-       int o = 65;
-        int b = o % 10;
-        int x = o / 10;
-        int m = b + x;
+//        Statement 1 is executed (one time) before the execution of the code block.
 
-        System.out.println(m);
+//        Statement 2 defines the condition for executing the code block.
 
+//        Statement 3 is executed (every time) after the code block has been executed.
+
+//        int o = 65;
+//        int b = o % 10;
+//        int x = o / 10;
+//          int b = 0;
+        int m = 0; //create a variable for iteratively sum each digit
+        int o = 6517782; //here is the test digit
+//        int m = b + x;
+
+        for (m = 0; o != 0; o = o / 10) //initialise m = 0 and if the test digit is greater than 0  then iteratively divide each digit by 10 until o = 0 is false
+             m = m + o % 10;//get the remainder and adds it to the sum variable
+        System.out.println("print" + m);
+
+ ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+ //Write a program to reverse the digits of a number.
 
     }
 }
