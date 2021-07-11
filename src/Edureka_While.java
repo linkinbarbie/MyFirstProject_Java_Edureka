@@ -39,7 +39,7 @@ public class Edureka_While {
         }
         System.out.println("Adding all the numbers in " + uu + " will give you " + m);
 
-   // Write a program to add the digits of a number
+   // Write a program to reverse the digits of a number
         int mainNumber = 645454;
         int answer = 0;
         while(mainNumber != 0){
@@ -47,6 +47,18 @@ public class Edureka_While {
             answer = answer * 10 + storeNumber;
             mainNumber = mainNumber/10;}
             System.out.println("Answer: "+answer);
+
+   // Write a program to generate 10 Fibonacci numbers
+        int counter = 1;
+        int firstNum = 0;
+        int secondNum = 1;
+        while(counter<=10){
+            System.out.println(firstNum);
+            int answer2 = firstNum+secondNum;
+            firstNum = secondNum;
+            secondNum = answer2;
+            counter++;
+        }
 
     }
 
