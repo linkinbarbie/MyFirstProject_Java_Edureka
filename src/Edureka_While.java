@@ -39,5 +39,15 @@ public class Edureka_While {
         }
         System.out.println("Adding all the numbers in " + uu + " will give you " + m);
 
+   // Write a program to add the digits of a number
+        int mainNumber = 645454;
+        int answer = 0;
+        while(mainNumber != 0){
+            int storeNumber =  mainNumber % 10 ;
+            answer = answer * 10 + storeNumber;
+            mainNumber = mainNumber/10;}
+            System.out.println("Answer: "+answer);
+
     }
+
 }
