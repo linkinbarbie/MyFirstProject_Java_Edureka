@@ -3,7 +3,7 @@ public class Edureka_For {
     public static void main(String[] args) {
         for(int val = 2;  val <= 21 ; val++)//iterate all numbers less than equal to 21
             if (val % 2 == 0 ) //then identify which of these numbers can be divided by 2
-            System.out.println("Divisible by 2: " + val);
+                System.out.println("Divisible by 2: " + val);
             else
                 System.out.println("Not divisible by 2: " + val);
 
@@ -36,30 +36,44 @@ public class Edureka_For {
 //        int x = o / 10;
 //          int b = 0;
         int m = 0; //create a variable for iteratively sum each digit
-        int o = 651778231; //here is the test digit
+        int o = 123; //here is the test digit
         int uu = o;
 //        int m = b + x;
-
-        for (m = 0; o != 0; o = o / 10) //initialise m = 0 and if the test digit is greater than 0  then iteratively divide each digit by 10 until o = 0 is false
+        //
+        for (; o != 0; o = o / 10) //initialise m = 0 and if the test digit is greater than 0  then iteratively divide each digit by 10 until o = 0 is false
              m = m + o % 10;//get the remainder and adds it to the sum variable
         System.out.println("Adding digits for "+ uu + " to get " + m);
+        //Step 1: int m = 0 - start
+        //Step 2: 123 != 0; - the condition not met - check if the condition is met
+        //Step 3: take the action = m = m + 123 % 10 - m = 3 - take the action
+        //step 4: 12 = 123/10 - this takes you to the next run of the loop - restart the loop
+
 
  ///////////////////////////////////////////////////////////////////////////////////////////////////////////
  //Write a program to reverse the digits of a number.
 
+        int mainNumber = 645454;
+        int answer = 0;
 
-        int w = 0;//declare the test variable, the second variable for print line,
-        int ni = 6558;
-//        int x = q % 10;
-//        int z = q / 10;
-//        int ii = (x * 10)+z;
+        for(;mainNumber!= 0;mainNumber = mainNumber/10){
+            int storeNumber =  mainNumber % 10 ; //20 - split this number to get the remainder and store it here
+            answer = answer * 10 + storeNumber;}// -take the remainder and add it to the answer after multiplying answer by 10.
+        System.out.println("Answer: "+answer);
 
-        for(int q = 6558; q != 0; q = q / 10) {
-            //you have to declare the variables in scope if you are creating them within the scope.they cannot be called outside the scope.
-            int yu = q % 10;
-             w = w * 10 + yu;
-        }
-        System.out.println("Reverse to " + ni + " get " + w);
+
+    //Write a program to generate 10 Fibonacci numbers
+        int counter = 1;
+        int firstNum = 0;
+        int secondNum = 1;
+
+
+        for(;counter<=10;counter++){
+            System.out.println(firstNum);
+            int answer2 = firstNum+secondNum;
+
+            firstNum = secondNum;
+            secondNum = answer2;}
+
 
     }
 }
