@@ -15,33 +15,20 @@ public class Edureka_For {
         //get the value to multiply the factorials by
         for(int num = 1; num <= n; num++) //use for to get all the numbers less than equals to 3
             i=i * num; //multiply the base number by each number incrementally
-                System.out.println(i + " is the factorial of " + n);
+        System.out.println(i + " is the factorial of " + n);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //Write a program to generate tables of 10
-        int results = 0;
         for(int r = 1; r <= 3; r++)
             System.out.println("10 x " + r + ": " +r * 10);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //Write a program to add the digits of a number
-//        Statement 1 is executed (one time) before the execution of the code block.
-
-//        Statement 2 defines the condition for executing the code block.
-
-//        Statement 3 is executed (every time) after the code block has been executed.
-
-//        int o = 65;
-//        int b = o % 10;
-//        int x = o / 10;
-//          int b = 0;
         int m = 0; //create a variable for iteratively sum each digit
         int o = 123; //here is the test digit
         int uu = o;
-//        int m = b + x;
-        //
         for (; o != 0; o = o / 10) //initialise m = 0 and if the test digit is greater than 0  then iteratively divide each digit by 10 until o = 0 is false
-             m = m + o % 10;//get the remainder and adds it to the sum variable
+            m = m + o % 10;//get the remainder and adds it to the sum variable
         System.out.println("Adding digits for "+ uu + " to get " + m);
         //Step 1: int m = 0 - start
         //Step 2: 123 != 0; - the condition not met - check if the condition is met
@@ -49,12 +36,11 @@ public class Edureka_For {
         //step 4: 12 = 123/10 - this takes you to the next run of the loop - restart the loop
 
 
- ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////        ///////////////////////////////////////////////////////////////////////////////////////////////////////////
  //Write a program to reverse the digits of a number.
 
         int mainNumber = 645454;
         int answer = 0;
-
         for(;mainNumber!= 0;mainNumber = mainNumber/10){
             int storeNumber =  mainNumber % 10 ; //20 - split this number to get the remainder and store it here
             answer = answer * 10 + storeNumber;}// -take the remainder and add it to the answer after multiplying answer by 10.
@@ -65,15 +51,13 @@ public class Edureka_For {
         int counter = 1;
         int firstNum = 0;
         int secondNum = 1;
-
-
         for(;counter<=10;counter++){
             System.out.println(firstNum);
             int answer2 = firstNum+secondNum;
-
             firstNum = secondNum;
             secondNum = answer2;}
 
 
     }
 }
+
