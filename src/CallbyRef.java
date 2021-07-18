@@ -6,7 +6,7 @@ class Sample {
     }
 
     void show() {
-        System.out.println("Data is: " + data);
+        System.out.println("Data is: " + data);//assign the show function to the sample class to display the output
     }
 }
 
