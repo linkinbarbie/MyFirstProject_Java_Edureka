@@ -60,7 +60,7 @@ public class Assignment_DataHandlingFunctions {
                 "Joe", "Mary", 600000, 550000, 500000, 500000, 300000);
         a.display(a);
         a.display(new String[]{"00", "002", "003", "004", "005"}, new String[]{"John", "Clark", "Louise", "Joe", "Mary"});
-        a.display("Clark", new int[]{0, 2, 3, 4, 5}, new String[]{"John", "Clark", "Louise", "Joe", "Mary"}, new double[]{20, 30, 40, 50, 60});
+        a.display("Louise", new int[]{0, 2, 3, 4, 5}, new String[]{"John", "Clark", "Louise", "Joe", "Mary"}, new double[]{20, 30, 40, 50, 60});
     }
 }
 
