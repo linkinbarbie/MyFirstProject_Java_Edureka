@@ -41,7 +41,7 @@ class Menu {
 
 public class Application_Resturant {
     public static void main(String[] args) {
-        Menu mn_list = new Menu(new String[]{"Soda","Gin","Orange Tang"},new String[]{"Whisky","Soda","Gin","KingKong","Orange Tang"},new int[]{23,4,55,78,45});
+        Menu mn_list = new Menu(new String[]{"Soda","Gin","Budweiser"},new String[]{"Whisky","Soda","Gin","KingKong","Orange Tang","Budweiser"},new int[]{23,4,55,78,45,5});
         mn_list.display(mn_list);
     }
 
