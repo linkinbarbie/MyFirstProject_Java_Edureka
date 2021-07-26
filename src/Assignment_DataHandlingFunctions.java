@@ -11,7 +11,7 @@ class userinput {//program to capture employee information and store in array
               String EmpName4, String EmpName5, int EmpSal1, int EmpSal2, int EmpSal3, int EmpSal4, int EmpSal5) {
         EmployeeID = new String[]{EmpID1, EmpID2, EmpID3, EmpID4, EmpID5};
         EmployeeName = new String[]{EmpName1, EmpName2, EmpName3, EmpName4, EmpName5};
-        Salary = new int[]{EmpSal1, EmpSal2, EmpSal3,EmpSal4,EmpSal5};//constructor to store the input
+        Salary = new int[]{EmpSal1, EmpSal2, EmpSal3, EmpSal4, EmpSal5};//constructor to store the input
     }
 
     void display(userinput g) {
@@ -27,26 +27,40 @@ class userinput {//program to capture employee information and store in array
             System.out.println();
         }
     }
-   void display(String[] EmpID, String[] EmpName){//function overloading: passing arrays as arguments
-       int i,j;
 
-       for(i=0;i<5;i++){
-           for(j=0;j<1;j++){
-               System.out.print(EmpID[i]+" "+EmpName[i]);
-           }
-           System.out.println();
-       }
+    void display(String[] EmpID, String[] EmpName) {//function overloading: passing arrays as arguments //2,Write another function display() withEmployee ID array and Employee name array as arguments
+        int i, j;
 
-   }
+        for (i = 0; i < 5; i++) {
+            for (j = 0; j < 1; j++) {
+                System.out.print(EmpID[i] + " " + EmpName[i]);
+            }
+            System.out.println();
+        }
+
+    }
+
+    void display(String name, int[] regno, String[] EmpName, double[] salary) {
+        int i, index;
+        for (i = 0; i < 4; i++) {
+            if (EmpName[i].equals(name)) {//if you are comparing two string use equals
+                System.out.println(regno[i] + " " + EmpName[i] + " " + salary[i]);
+            }
+        }
+
+
+    }
+
 }
 
 public class Assignment_DataHandlingFunctions {
     public static void main(String[] args) throws Exception {
         //  userinput a[] = new userinput[5];
-        userinput a = new userinput("00", "002", "003", "004","005","John", "Clark", "Nancy",
-                "Joe", "Mary", 600000,550000, 500000,500000,300000);
+        userinput a = new userinput("00", "002", "003", "004", "005", "John", "Clark", "Nancy",
+                "Joe", "Mary", 600000, 550000, 500000, 500000, 300000);
         a.display(a);
-        a.display(new String[]{"00", "002", "003", "004", "005"},new String[]{"John","Clark","Louise","Joe","Mary"});
+        a.display(new String[]{"00", "002", "003", "004", "005"}, new String[]{"John", "Clark", "Louise", "Joe", "Mary"});
+        a.display("Clark", new int[]{0, 2, 3, 4, 5}, new String[]{"John", "Clark", "Louise", "Joe", "Mary"}, new double[]{20, 30, 40, 50, 60});
     }
 }
 
